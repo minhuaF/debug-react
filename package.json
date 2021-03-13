@@ -147,5 +147,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "eslint-plugin-no-for-of-loops": "^1.0.1"
   }
 }

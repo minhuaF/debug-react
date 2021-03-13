@@ -334,6 +334,11 @@ module.exports = function (webpackEnv) {
           'scheduler/tracing': 'scheduler/tracing-profiling',
         }),
         ...(modules.webpackAliases || {}),
+        
+        "react": path.resolve(__dirname, "../src/react/packages/react"),
+        "react-dom": path.resolve(__dirname, "../src/react/packages/react-dom"),
+        "shared": path.resolve(__dirname, "../src/react/packages/shared"),
+        "react-reconciler": path.resolve( __dirname,  "../src/react/packages/react-reconciler"),
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding
